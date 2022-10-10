@@ -10,8 +10,8 @@ fn main() {
         process::exit(1);
     });
 
-    println!("Поиск {}", config.query);
-    println!("В файле {}", config.filename);
+    // println!("Поиск {}", config.query);
+    // println!("В файле {}", config.filename);
     if let Err(e) = minigrep::run(config) {
         println!("Ошибка в приложении: {}", e);
         process::exit(1);
